@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, Pagination, Stats, HitsPerPage } from 'react-instantsearch-dom';
+import { InstantSearch, Pagination, Stats } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import { createURL, urlToSearchState, searchStateToUrl } from './util';
 import ToggleThemeModeButton from './components/ToggleThemeModeButton';
@@ -23,7 +23,11 @@ const searchClient = algoliasearch(
 // this is for testing...
 ////////////////////////////////////////////////////////////////
 // const index = searchClient.initIndex('stg_choicemarket_products');
-// index.search('chicken', { hitsPerPage: 5, getRankingInfo: true })
+// index.search('', {
+//   hitsPerPage: 5,
+//   getRankingInfo: true,
+//   // filters: `category:Candy`
+// })
 //   .then(({ hits }) => { console.log(hits); })
 //   .catch(err => { console.log(err); });
 ////////////////////////////////////////////////////////////////

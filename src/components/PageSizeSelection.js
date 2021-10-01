@@ -1,5 +1,5 @@
 import React from 'react';
-import { HitsPerPage, Stats } from 'react-instantsearch-dom';
+import { HitsPerPage } from 'react-instantsearch-dom';
 
 // using default page size dropper for now
 // TODO: convert this to MUI-d dropdown
