@@ -23,13 +23,13 @@ Open http://localhost:3000 to see the app.
 
 ## Notes
 Given the demo api-key ("search only?"), a number of features (ie. facets for filters, custom ranking, etc) that I was
-looking to implement were unable to be configured. Those configurations upon the target index appear to be managed via
-an account dashboard or by using index.setSettings (which is claimed to be inaccessible from the JS frontend client
+looking to implement were unable to be configured. Those settings upon the target index appear to be managed via
+an account dashboard or by using `index.setSettings()` (which is claimed to be inaccessible from the JS frontend client
 version of the api -- will hopefully find out more).
 
-- React-router is used in conjunction with searchState to enable search history quasi-routing.
+- React-router is used in conjunction with `searchState` to enable search history quasi-routing.
 - Material-UI 5.0 is integrated with connected components to enhance component design and functionality
-- The latest version of React (17.*) was used, along with Hooks to manage component state
+- The latest version of React (17) was used, along with Hooks to manage component state
 - A light/dark-mode theme toggle was added to demonstrate context/provider usage
 - In lieu of a product image, which is preferable, a barcode was utilized for some graphical distinction
 
