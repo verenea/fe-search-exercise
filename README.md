@@ -22,6 +22,7 @@ Open http://localhost:3000 to see the app.
 
 
 ## Notes
+
 With the provided api-key ("search-only" I believe), a number of features that I would like to implement -- such as faceted Filters and custom Ranking/Scoring -- appear to be inaccessible or not currently configured. Those settings upon the target index may be managed via an account dashboard or by using `index.setSettings()`, which some users claim to be inaccessible from the JS frontend client version of the InstantSearch api. I will try to find out more information to see if I'm missing some fundamental understanding.
 
 - React-router is used in conjunction with `searchState` to enable search history quasi-routing.
@@ -29,6 +30,7 @@ With the provided api-key ("search-only" I believe), a number of features that I
 - The latest version of React (17) was used, along with Hooks to manage component state
 - A light/dark-mode theme toggle was added to demonstrate context/provider usage
 - In lieu of a product image, which is preferable, a barcode was utilized for some graphical distinction
+- Typically, a .env file would not have been source-controlled in the repo, but for the sake of this exercise, it is needed for those who need to run the project locally
 
  
 ## Todo
